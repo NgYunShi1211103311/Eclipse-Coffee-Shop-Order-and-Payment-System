@@ -1,0 +1,217 @@
+{
+  "1001": {
+    "id": 1001,
+    "customer_name": "Yun Shi",
+    "customer_email": "1211103311@student.mmu.edu.my",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 3,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+        "qty": 1
+      }
+    ],
+    "total_amount": 3,
+    "status": "confirmed",
+    "created_at": "2025-06-22T02:10:00.103133",
+    "payment_status": "paid",
+    "payment_method": "tng",
+    "payment_date": "2025-06-22T02:10:24.914706"
+  },
+  "1002": {
+    "id": 1002,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 1,
+        "name": "Latte",
+        "price": 3.5,
+        "image": "images/latte.jpg",
+        "qty": 1
+      }
+    ],
+    "total_amount": 3.5,
+    "status": "pending",
+    "created_at": "2025-06-22T02:15:58.715910",
+    "payment_status": "unpaid"
+  },
+  "1003": {
+    "id": 1003,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 3,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+        "qty": 1
+      }
+    ],
+    "total_amount": 3,
+    "status": "pending",
+    "created_at": "2025-06-22T02:17:20.147117",
+    "payment_status": "unpaid"
+  },
+  "1004": {
+    "id": 1004,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 3,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+        "qty": 1
+      }
+    ],
+    "total_amount": 3,
+    "status": "confirmed",
+    "created_at": "2025-06-22T02:18:58.571809",
+    "payment_status": "paid",
+    "payment_method": "tng",
+    "payment_date": "2025-06-22T02:19:22.065954"
+  },
+  "1005": {
+    "id": 1005,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 3,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+        "qty": 1
+      }
+    ],
+    "total_amount": 3,
+    "status": "confirmed",
+    "created_at": "2025-06-22T02:23:18.427829",
+    "payment_status": "paid",
+    "payment_method": "tng",
+    "payment_date": "2025-06-22T02:23:36.027421"
+  },
+  "1006": {
+    "id": 1006,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 3,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+        "qty": 1
+      },
+      {
+        "id": 1,
+        "name": "Latte",
+        "price": 3.5,
+        "image": "images/latte.jpg",
+        "qty": 1
+      }
+    ],
+    "total_amount": 6.5,
+    "status": "confirmed",
+    "created_at": "2025-06-22T02:24:05.568852",
+    "payment_status": "paid",
+    "payment_method": "tng",
+    "payment_date": "2025-06-22T02:24:11.504006"
+  },
+  "1007": {
+    "id": 1007,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 3,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+        "qty": 1
+      }
+    ],
+    "total_amount": 3,
+    "status": "pending",
+    "created_at": "2025-06-22T02:48:50.683167",
+    "payment_status": "unpaid"
+  },
+  "1008": {
+    "id": 1008,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 3,
+        "image": "static/pic/cappucino.jpg",
+        "qty": 1
+      }
+    ],
+    "total_amount": 3,
+    "status": "confirmed",
+    "created_at": "2025-06-22T03:07:32.253279",
+    "payment_status": "paid",
+    "payment_method": "tng",
+    "payment_date": "2025-06-22T03:07:40.036771"
+  },
+  "1009": {
+    "id": 1009,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 11.5,
+        "image": "static/pic/cappucino.jpg",
+        "qty": 1
+      },
+      {
+        "id": 1,
+        "name": "Latte",
+        "price": 10,
+        "image": "static/pic/latte.jpg",
+        "qty": 1
+      },
+      {
+        "id": 4,
+        "name": "Mocha",
+        "price": 15,
+        "image": "static/pic/mocha.jpg",
+        "qty": 1
+      }
+    ],
+    "total_amount": 36.5,
+    "status": "confirmed",
+    "created_at": "2025-06-22T03:11:07.469549",
+    "payment_status": "paid",
+    "payment_method": "tng",
+    "payment_date": "2025-06-22T03:11:24.204785"
+  },
+  "1010": {
+    "id": 1010,
+    "customer_name": "Yun Shi",
+    "customer_email": "ngyunshi2003@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 11.5,
+        "image": "static/pic/cappucino.jpg",
+        "qty": 1
+      }
+    ],
+    "total_amount": 11.5,
+    "status": "confirmed",
+    "created_at": "2025-06-23T04:43:47.123317",
+    "payment_status": "paid",
+    "payment_method": "tng",
+    "payment_date": "2025-06-23T04:43:57.535840"
+  }
+}

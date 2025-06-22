@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CoffeeShopService"
+                  targetNamespace="urn:coffeeshop.soap"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:tns="urn:coffeeshop.soap"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <wsdl:message name="CreateOrderRequest">
+        <wsdl:part name="customer_name" type="xsd:string"/>
+        <wsdl:part name="customer_email" type="xsd:string"/>
+        <wsdl:part name="cart_items" type="xsd:string"/>
+    </wsdl:message>
+
+    <wsdl:message name="CreateOrderResponse">
+        <wsdl:part name="result" type="xsd:string"/>
+    </wsdl:message>
+
+    <wsdl:message name="ProcessPaymentRequest">
+        <wsdl:part name="order_id" type="xsd:int"/>
+        <wsdl:part name="amount" type="xsd:double"/>
+        <wsdl:part name="payment_method" type="xsd:string"/>
+    </wsdl:message>
+
+    <wsdl:message name="ProcessPaymentResponse">
+        <wsdl:part name="result" type="xsd:string"/>
+    </wsdl:message>
+
+    <wsdl:message name="GetOrderStatusRequest">
+        <wsdl:part name="order_id" type="xsd:int"/>
+    </wsdl:message>
+
+    <wsdl:message name="GetOrderStatusResponse">
+        <wsdl:part name="result" type="xsd:string"/>
+    </wsdl:message>
+
+    <wsdl:message name="CancelOrderRequest">
+        <wsdl:part name="order_id" type="xsd:int"/>
+    </wsdl:message>
+
+    <wsdl:message name="CancelOrderResponse">
+        <wsdl:part name="result" type="xsd:string"/>
+    </wsdl:message>
+
+    <wsdl:portType name="CoffeeShopServicePortType">
+        <wsdl:operation name="createOrder">
+            <wsdl:input message="tns:CreateOrderRequest"/>
+            <wsdl:output message="tns:CreateOrderResponse"/>
+        </wsdl:operation>
+        
+        <wsdl:operation name="processPayment">
+            <wsdl:input message="tns:ProcessPaymentRequest"/>
+            <wsdl:output message="tns:ProcessPaymentResponse"/>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getOrderStatus">
+            <wsdl:input message="tns:GetOrderStatusRequest"/>
+            <wsdl:output message="tns:GetOrderStatusResponse"/>
+        </wsdl:operation>
+        
+        <wsdl:operation name="cancelOrder">
+            <wsdl:input message="tns:CancelOrderRequest"/>
+            <wsdl:output message="tns:CancelOrderResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="CoffeeShopServiceBinding" type="tns:CoffeeShopServicePortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        
+        <wsdl:operation name="createOrder">
+            <soap:operation soapAction="urn:coffeeshop.soap#createOrder"/>
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="processPayment">
+            <soap:operation soapAction="urn:coffeeshop.soap#processPayment"/>
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="getOrderStatus">
+            <soap:operation soapAction="urn:coffeeshop.soap#getOrderStatus"/>
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="cancelOrder">
+            <soap:operation soapAction="urn:coffeeshop.soap#cancelOrder"/>
+            <wsdl:input>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="encoded" namespace="urn:coffeeshop.soap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+
+    <wsdl:service name="CoffeeShopService">
+        <wsdl:port name="CoffeeShopServicePort" binding="tns:CoffeeShopServiceBinding">
+            <soap:address location="http://localhost:5000/soap"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>
