@@ -2,9 +2,8 @@
 
 A comprehensive coffee shop ordering system with both SOAP and web interfaces, featuring enhanced payment success notifications and complete order management functionality.
 
-## Features
 
-### ✅ Implemented Functions
+### Implemented Functions
 
 1. Create Order - Create new coffee orders with customer details and cart items
 2. Process Payment - Handle payments with multiple payment methods
@@ -12,6 +11,8 @@ A comprehensive coffee shop ordering system with both SOAP and web interfaces, f
 4. Cancel Order - Cancel orders that haven't been paid yet
 
 ## Installation
+** Make sure to download and import Flask** :
+pip import flask
 
 1. **Clone the repository**:
    cd (to where you saved the folder)
